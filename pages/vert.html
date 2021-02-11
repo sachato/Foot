@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Terrain de foot</title>
+
+	<style>
+
+	body {margin: 0; padding:0;background:darkgreen;}
+
+    .terrain {
+    	width:1200px; 
+    	height:600px; 
+		border:solid 3px white; 
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin:120px auto;
+		background:#568b43;
+		position: relative;
+		}
+
+	.coin {
+		width:50px;
+		height:50px;
+		border-radius:50px;
+		border:transparent;
+		position: absolute;
+		
+	}
+
+	#hg {top:0; left:0;transform: translate(-50%,-50%) rotate(45deg);border-right:solid 3px white;}
+	#hd {top:0; right:0;transform: translate(50%,-50%) rotate(-45deg);border-left:solid 3px white;}
+	#bg {bottom:0; left:0;transform: translate(-50%,50%) rotate(45deg);border-top: solid 3px white;}
+	#bd {bottom:0; right:0;transform:translate(50%,50%) rotate(-45deg);border-top:solid 3px white;}
+
+	.gauche, .centre, .droite { height:600px; width:20%; position: relative; }
+
+	.surface {width:80%; height:300px; border:solid 2px white;position: absolute;transform: translateY(-50%);top:50%;}
+
+	#surfacegauche {border-left:transparent;left:0;} #surfacedroite {border-right:transparent;right:0;}
+
+	.cages {width:30%; height:150px; border:solid 2px white; position: absolute; transform: translateY(-50%); top:50%;}
+
+	#cageleft {border-left:transparent; left:0;}  #cageright {border-right: transparent; right: 0;}
+
+	.cercle {width:100%; height:60%; border-radius: 50%;position: absolute;top:50%; border:solid 5px white;}
+
+	#cercleg {border-left:transparent; border-top:transparent; border-bottom:transparent; transform: translate(45%,-50%);}
+
+	#cercled {border-right:transparent; border-top:transparent; border-bottom:transparent; transform: translate(-45%,-50%);}
+
+	.lignecentre {height:100%; border:solid 2px white; width:0px;position: absolute;left:50%;transform: translateX(-50%);}
+	.coupenvoi {border-radius:50%;width:90%;height:35%; border:solid 3px white; position: absolute;top:50%; transform: translate(-50%,-50%); left:50%;}
+
+	.peno {width:8px; height:8px; background: white; border-radius: 50%; position: absolute; top:50%; transform: translateY(-50%);left:50%;}
+	</style>
+
+</head>
+
+<body>
+	<div class="terrain">
+
+	<div class="coin" id="hg"></div>
+	<div class="coin" id="hd"></div>
+	<div class="coin" id="bg"></div>
+	<div class="coin" id="bd"></div>
+
+
+
+	<div class="gauche">
+		<div class="surface" id="surfacegauche">
+			<div class="cercle" id="cercleg"></div>
+			<div class="cages" id="cageleft"></div>
+			<div class="peno"></div>
+		</div>
+	</div>
+
+
+
+	<div class="centre">
+		<div class="coupenvoi"></div>
+		<div class="lignecentre"></div>
+
+	</div>
+
+
+
+	<div class="droite">
+		<div class="surface" id="surfacedroite">
+			<div class="cercle" id="cercled"></div>
+			<div class="cages" id="cageright"></div>
+		<div class="peno"></div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>

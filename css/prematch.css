@@ -1,0 +1,8 @@
+body {margin: 0;padding:0;background: url(../img/stade.jpg);height:100vh;background-size:cover;background-position: center;background-repeat:no-repeat;}
+form {border-radius:20px;display: block;box-shadow:0 0 10px white;margin:120px auto; width:400px;background: red;padding:30px;background:url(../img/bgback.jpg);background-size: cover;background-position: center;}
+.rubrique{display: flex;justify-content: space-between; align-items: center;width:100%;}
+label {color: white;font-family: Verdana;font-size:16px;font-weight:bold;}
+select {padding: 0 10px; font-family: Arial ;font-weight: bold;box-shadow: 0 0 5px black;}
+.btn {padding: 10px;font-size:16px;font-family: Verdana; text-transform: uppercase;font-weight: bold;display: block;margin:auto;border-radius:30px;border:none;}
+.btn:hover{transform: scale(1.1); transition: .4s;cursor:pointer;}
+h1 {color:white;font-family: Verdana;text-transform: uppercase;color:white;font-weight: bold;text-align: center;margin-top:45px;font-size:40px;}

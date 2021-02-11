@@ -1,0 +1,173 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: "Verdana";
+}
+
+
+body {
+	background-image:url("../img/stade.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100vh;
+	overflow:hidden;
+    cursor:url(../img/curseur.png), auto;
+}
+
+.loader-container {
+	width:100%;
+	height:100vh;
+	background-color:black;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loader {
+	width:50px;
+	height:50px;
+	border:5px solid;
+	color:steelblue;
+	border-radius:50%;
+	border-top-color:transparent;
+	animation:loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+
+	25% {
+		color:#2ecc71;
+	}
+	50% {
+		color:#f1c40f;
+	}
+	75% {
+		color:#e74c3c;
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.logo {
+width:500px;
+display: block;
+margin: auto;
+position: relative;
+top:50px;
+
+}
+
+@keyframes grossir {
+	0% {transform: scale(1);}
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1);}
+}
+
+.contain {
+	animation:opacite 7s;
+}
+
+@keyframes opacite {
+
+	0% {
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	70% {
+		opacity: 0;
+	}
+
+	80% {
+		opacity: 0.70;
+	}
+
+	90% {
+		opacity: 0.80;
+	}
+
+	99% {
+		opacity: 0.90;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+.button {
+	position: absolute;
+	background:black;
+	border-radius:35px;
+	transform: translateX(-50%);
+	margin-top:20px;
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+	font-family: Verdana;
+	padding:20px;
+	font-size:15px;
+	animation:grossir infinite linear 1.5s;
+	cursor:url(../img/link.png), auto;
+	font-weight:bold;
+}
+
+@keyframes grossir {
+	0% {transform: translateX(-50%) scale(1);}
+	50% {transform: translateX(-50%) scale(1.2);}
+	100% {transform: translateX(-50%) scale(1);}
+}
+
+.button:hover {
+	transition:.4s;
+	transform:translateX(-50%) scale(1.4);
+	background:white;
+	color:black;
+}
+
+#co {
+	left:40%;
+}
+
+#create {
+	left:60%;
+}
+
+
+/* Ici se trouve l'animation du ballon et son positionnement. */
+
+@keyframes rotation {0% {transform:rotate(0deg); left:-100%;} 100%{transform:rotate(1080deg);left:-2%;}}
+@keyframes bounce {  from {transform: translateY(0);} to   {transform: translateY(-50px);}}
+
+.ball {width:100px; height:100px; border:solid 1px black;border-radius:50px;background:url(../img/Ball.png) 0 0 no-repeat;
+		background-size:250px 100%; animation:rotation 6s; margin-top:200px;position:relative;left:-2%;}
+
+.bloc{position:relative; left:50%; transform:translateX(-50%); animation:bounce .7s ease infinite alternate;}
