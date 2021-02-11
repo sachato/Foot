@@ -42,7 +42,7 @@
             $req11 =$bdd->prepare('INSERT INTO Joue (IdMatch, IdEquipe) VALUES (?,?)');
             $req11->execute(array($max, $_POST['Advairsaire']));
 
-            header('Location: http://cubefoot.alwaysdata.net/tableauDeBord.php');
+            header('Location: http://cubefoot.alwaysdata.net/compoequipe.php');
           }
     ?>
     <body>
