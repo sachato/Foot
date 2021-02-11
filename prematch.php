@@ -113,7 +113,7 @@ $req4 = $bdd->query('SELECT * FROM Arbitre'); ?>
 <label for="Date">Date </label><input type="date" name="Date" value="" />
 </div>
 <br>
-<p><input class="btn" type="submit" value="Envoyer" /></p>
+<p><input class="btn" type="submit" value="Composition de l'equipe" /></p>
 </form>
 
     	</body>
